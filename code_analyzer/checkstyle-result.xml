@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='Gemfile'/>
+  <file name='Rakefile'/>
+  <file name='features/pages/account/accounts_page.rb'/>
+  <file name='features/pages/login/login_page.rb'/>
+  <file name='features/step_definitions/accounts/accounts_steps.rb'/>
+  <file name='features/step_definitions/login/login_steps.rb'/>
+  <file name='features/support/common/commons.rb'/>
+  <file name='features/support/env.rb'/>
+  <file name='features/support/hooks.rb'/>
+  <file name='features/support/spec_instances/orangehrmlive_instance.rb'/>
+</checkstyle>
