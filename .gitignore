@@ -14,6 +14,8 @@
 
 # Used by dotenv library to load environment variables.
 # .env
+code_analyzer/index.html
+code_analyzer/checkstyle-result.xml
 
 # Ignore Byebug command history file.
 .byebug_history

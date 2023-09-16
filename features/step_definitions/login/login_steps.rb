@@ -8,7 +8,6 @@ Quando('realizar o login com dados válidos') do
   orangehrmlive_login_pages.realizar_login(user, passwd)
 end
 
-
 Então('validar que o login foi realizado com sucesso') do
   orangehrmlive_accounts_pages.wait_until_div_topbar_account_visible
   orangehrmlive_accounts_pages.wait_until_div_title_account_visible
