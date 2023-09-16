@@ -1,0 +1,416 @@
+[
+  {
+    "id": "account",
+    "uri": "features/spec/account/account.feature",
+    "keyword": "Funcionalidade",
+    "name": "Account",
+    "description": "  Como usuário da Orange hrm live\n  Quero me cadastrar no site\n  Para gerenciar meus colaboradores",
+    "line": 3,
+    "elements": [
+      {
+        "id": "account;realizar-busca-de-perfil-admin",
+        "keyword": "Cenário",
+        "name": "Realizar Busca de Perfil Admin",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que tenha realizado o login com sucesso",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6909427000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "efetuar a pesquisa de usuários com perfil Admin",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/accounts/accounts_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2481448000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "validar que o consulta é realizado com sucesso",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/accounts/accounts_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 293933000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buscar_admin",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 441430000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83000
+            }
+          }
+        ]
+      },
+      {
+        "id": "account;realizar-exclusão-de-perfil-admin",
+        "keyword": "Cenário",
+        "name": "Realizar exclusão de Perfil Admin",
+        "description": "",
+        "line": 15,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que tenha realizado o login com sucesso",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22450823000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "selecionar o perfil Admin para a exclusão",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/accounts/accounts_steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3108048000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "validar que a exclusão é realizado com sucesso",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/accounts/accounts_steps.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437227000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@excluir_admin",
+            "line": 14
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 414672000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "login",
+    "uri": "features/spec/login/login.feature",
+    "keyword": "Funcionalidade",
+    "name": "Login",
+    "description": "  Como usuário da Orange hrm live\n  Quero de realizar login no site\n  Para gerenciar meus usuários",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@login",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "login;validar-login---sucesso",
+        "keyword": "Cenário",
+        "name": "Validar Login - Sucesso",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "acessar ao site",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11833244000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "obter um usuário para logar no site",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar o login com dados válidos",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2766162000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "validar que o login foi realizado com sucesso",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 554243000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@login_sucesso",
+            "line": 9
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 474818000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;validar-logout---sucesso",
+        "keyword": "Cenário",
+        "name": "Validar Logout - Sucesso",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que tenha realizado o login com sucesso",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21328521000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizar o logout",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3152407000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "validar que o logout foi realizado com sucesso",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/login/login_steps.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 528972000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@logout_sucesso",
+            "line": 16
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 378479000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
