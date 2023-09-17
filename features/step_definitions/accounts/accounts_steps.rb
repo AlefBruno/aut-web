@@ -39,6 +39,7 @@ Quando('informar os dados do perfil Admin para cadastro') do
   orangehrmlive_accounts_pages.input_username_account.set @user_account['username']
   orangehrmlive_accounts_pages.insert_and_confirme_password(@user_account['password'])
   orangehrmlive_accounts_pages.button_save_add_account.click
+  expect(page).to have_content("Success")
 end
 
 Então('validar que o cadastro é realizado com sucesso') do
