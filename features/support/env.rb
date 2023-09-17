@@ -1,6 +1,7 @@
 require 'capybara'
 require 'capybara/dsl'
 require 'capybara/cucumber'
+require 'faker'
 require 'pry'
 require 'rspec'
 require 'selenium-webdriver'
