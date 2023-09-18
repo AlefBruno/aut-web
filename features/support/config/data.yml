@@ -2,3 +2,6 @@ orangehrmlive:
   login:
     user: 'Admin'
     password: 'admin123'
+    employee: 'Paul'
+    role: 'Admin'
+    status: 'Enabled'

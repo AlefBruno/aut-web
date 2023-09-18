@@ -5,57 +5,67 @@
     "keyword": "Funcionalidade",
     "name": "Account",
     "description": "  Como usuário da Orange hrm live\n  Quero me cadastrar no site\n  Para gerenciar meus colaboradores",
-    "line": 3,
+    "line": 4,
+    "tags": [
+      {
+        "name": "@account",
+        "line": 3
+      }
+    ],
     "elements": [
       {
-        "id": "account;realizar-busca-de-perfil-admin",
+        "id": "account;realizar-cadastro-de-perfil-admin",
         "keyword": "Cenário",
-        "name": "Realizar Busca de Perfil Admin",
+        "name": "Realizar cadastro de Perfil Admin",
         "description": "",
-        "line": 9,
+        "line": 10,
         "type": "scenario",
         "steps": [
           {
             "keyword": "Dado ",
             "name": "que tenha realizado o login com sucesso",
-            "line": 10,
+            "line": 11,
             "match": {
-              "location": "features/step_definitions/login/login_steps.rb:23"
+              "location": "features/step_definitions/login/login_steps.rb:22"
             },
             "result": {
               "status": "passed",
-              "duration": 6909427000
+              "duration": 10106234000
             }
           },
           {
             "keyword": "Quando ",
-            "name": "efetuar a pesquisa de usuários com perfil Admin",
-            "line": 11,
+            "name": "informar os dados do perfil Admin para cadastro",
+            "line": 12,
             "match": {
-              "location": "features/step_definitions/accounts/accounts_steps.rb:1"
+              "location": "features/step_definitions/accounts/accounts_steps.rb:29"
             },
             "result": {
               "status": "passed",
-              "duration": 2481448000
+              "duration": 9320111000
             }
           },
           {
             "keyword": "Então ",
-            "name": "validar que o consulta é realizado com sucesso",
-            "line": 12,
+            "name": "validar que o cadastro é realizado com sucesso",
+            "line": 13,
             "match": {
-              "location": "features/step_definitions/accounts/accounts_steps.rb:16"
+              "location": "features/step_definitions/accounts/accounts_steps.rb:45"
             },
             "result": {
               "status": "passed",
-              "duration": 293933000
+              "duration": 5915603000
             }
           }
         ],
         "tags": [
           {
-            "name": "@buscar_admin",
-            "line": 8
+            "name": "@account",
+            "line": 3
+          },
+          {
+            "name": "@cadastrar_admin",
+            "line": 9
           }
         ],
         "before": [
@@ -65,7 +75,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 80000
+              "duration": 162000
             }
           },
           {
@@ -74,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 116000
+              "duration": 119000
             }
           }
         ],
@@ -85,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 441430000
+              "duration": 404858000
             }
           },
           {
@@ -94,7 +104,103 @@
             },
             "result": {
               "status": "passed",
-              "duration": 83000
+              "duration": 84000
+            }
+          }
+        ]
+      },
+      {
+        "id": "account;realizar-busca-de-perfil-admin",
+        "keyword": "Cenário",
+        "name": "Realizar Busca de Perfil Admin",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que tenha usuário cadastro com perfil Admin",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/accounts/accounts_steps.rb:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21290261000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "efetuar a pesquisa de usuários com perfil Admin",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/accounts/accounts_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2729610000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "validar que o consulta é realizado com sucesso",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/accounts/accounts_steps.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34089000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@account",
+            "line": 3
+          },
+          {
+            "name": "@buscar_admin",
+            "line": 15
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386425000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.39.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62000
             }
           }
         ]
@@ -104,50 +210,54 @@
         "keyword": "Cenário",
         "name": "Realizar exclusão de Perfil Admin",
         "description": "",
-        "line": 15,
+        "line": 22,
         "type": "scenario",
         "steps": [
           {
             "keyword": "Dado ",
-            "name": "que tenha realizado o login com sucesso",
-            "line": 16,
+            "name": "que tenha usuário cadastro com perfil Admin",
+            "line": 23,
             "match": {
-              "location": "features/step_definitions/login/login_steps.rb:23"
+              "location": "features/step_definitions/accounts/accounts_steps.rb:64"
             },
             "result": {
               "status": "passed",
-              "duration": 22450823000
+              "duration": 16018622000
             }
           },
           {
             "keyword": "Quando ",
             "name": "selecionar o perfil Admin para a exclusão",
-            "line": 17,
+            "line": 24,
             "match": {
-              "location": "features/step_definitions/accounts/accounts_steps.rb:21"
+              "location": "features/step_definitions/accounts/accounts_steps.rb:13"
             },
             "result": {
               "status": "passed",
-              "duration": 3108048000
+              "duration": 3169051000
             }
           },
           {
             "keyword": "Então ",
             "name": "validar que a exclusão é realizado com sucesso",
-            "line": 18,
+            "line": 25,
             "match": {
-              "location": "features/step_definitions/accounts/accounts_steps.rb:31"
+              "location": "features/step_definitions/accounts/accounts_steps.rb:24"
             },
             "result": {
               "status": "passed",
-              "duration": 437227000
+              "duration": 32734000
             }
           }
         ],
         "tags": [
           {
+            "name": "@account",
+            "line": 3
+          },
+          {
             "name": "@excluir_admin",
-            "line": 14
+            "line": 21
           }
         ],
         "before": [
@@ -157,7 +267,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30000
+              "duration": 52000
             }
           },
           {
@@ -166,7 +276,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60000
+              "duration": 71000
             }
           }
         ],
@@ -177,7 +287,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 414672000
+              "duration": 453829000
             }
           },
           {
@@ -186,7 +296,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57000
+              "duration": 78000
             }
           }
         ]
@@ -220,11 +330,11 @@
             "name": "acessar ao site",
             "line": 11,
             "match": {
-              "location": "features/step_definitions/login/login_steps.rb:19"
+              "location": "features/step_definitions/login/login_steps.rb:18"
             },
             "result": {
               "status": "passed",
-              "duration": 11833244000
+              "duration": 8793511000
             }
           },
           {
@@ -236,7 +346,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46000
+              "duration": 60000
             }
           },
           {
@@ -248,7 +358,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2766162000
+              "duration": 2697959000
             }
           },
           {
@@ -256,11 +366,11 @@
             "name": "validar que o login foi realizado com sucesso",
             "line": 14,
             "match": {
-              "location": "features/step_definitions/login/login_steps.rb:12"
+              "location": "features/step_definitions/login/login_steps.rb:11"
             },
             "result": {
               "status": "passed",
-              "duration": 554243000
+              "duration": 702913000
             }
           }
         ],
@@ -281,7 +391,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30000
+              "duration": 70000
             }
           },
           {
@@ -290,7 +400,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44000
+              "duration": 72000
             }
           }
         ],
@@ -301,7 +411,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 474818000
+              "duration": 425716000
             }
           },
           {
@@ -310,7 +420,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 59000
+              "duration": 65000
             }
           }
         ]
@@ -328,11 +438,11 @@
             "name": "que tenha realizado o login com sucesso",
             "line": 18,
             "match": {
-              "location": "features/step_definitions/login/login_steps.rb:23"
+              "location": "features/step_definitions/login/login_steps.rb:22"
             },
             "result": {
               "status": "passed",
-              "duration": 21328521000
+              "duration": 10030614000
             }
           },
           {
@@ -340,11 +450,11 @@
             "name": "realizar o logout",
             "line": 19,
             "match": {
-              "location": "features/step_definitions/login/login_steps.rb:30"
+              "location": "features/step_definitions/login/login_steps.rb:29"
             },
             "result": {
               "status": "passed",
-              "duration": 3152407000
+              "duration": 1996916000
             }
           },
           {
@@ -352,11 +462,11 @@
             "name": "validar que o logout foi realizado com sucesso",
             "line": 20,
             "match": {
-              "location": "features/step_definitions/login/login_steps.rb:38"
+              "location": "features/step_definitions/login/login_steps.rb:37"
             },
             "result": {
               "status": "passed",
-              "duration": 528972000
+              "duration": 430303000
             }
           }
         ],
@@ -377,7 +487,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 30000
+              "duration": 88000
             }
           },
           {
@@ -386,7 +496,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 48000
+              "duration": 137000
             }
           }
         ],
@@ -397,7 +507,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 378479000
+              "duration": 371421000
             }
           },
           {
@@ -406,7 +516,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 61000
+              "duration": 64000
             }
           }
         ]
